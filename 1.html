@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <script>
+             function showDate()
+            {
+var currentDate = new Date();
+var day = currentDate.getDate();
+// var month = currentDate.getMonth() + 1;
+var year = currentDate.getFullYear();
+const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+// console.log("Current Date: " + day);
+// console.log("Current Month: " + month);
+// console.log("Current Year: " + year);
+let month = months[currentDate.getMonth()];
+// document.write(day+"/"+month+"/"+year);
+document.getElementById("date").innerHTML = day +"/"+month+"/"+year;
+            }
+            function showTime()
+            {
+                x = new Date();
+                // document.write(x);
+
+                document.getElementById("time").innerHTML = x;
+            }
+           
+        
+        </script>
+        <style>
+            .container{
+                margin-top: 10%;
+                margin-left: 10%;
+                margin-right: 10%;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border-style:ridge;
+                background-color: teal;
+                padding-top: 20px;
+                padding-right: 10px;
+                padding-left: 10px;
+                padding-bottom: 10px;
+                
+            }
+            .container .btn{
+                padding-top: 5px;
+                padding-left: 3px;
+                padding-bottom: 5px;
+                padding-right: 3px;
+                background-color: blueviolet;
+            }
+            .container p{
+                color:rgb(192, 213, 35);
+            }
+        </style>
+    </head>
+    <body>
+        <form name="f" class="container">
+            <input class="btn" type="button" onclick="showDate()" value="show date">
+            <p id="date"></p>
+            <input class="btn" type="button" onclick="showTime()" value="show Time">
+            <p id="time"></p>
+    </body>
+</html>

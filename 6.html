@@ -1,0 +1,88 @@
+<html>
+<head>
+<style>
+    .container{
+        margin-top: 10%;
+        margin-left: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        border-style: solid;
+        background-color:blueviolet;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .container .btn{
+        background-color: darkseagreen;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .container .btn-clear{
+        background-color: red;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+</style>
+<script>
+function reverse()
+{
+   var str = eval(f.n1.value);
+    var charArray = str.split('');
+  var sortedArray = charArray.sort();
+  var sortedString = sortedArray.join('');
+    f.n2.value =sortedArray;
+}
+</script>
+
+</head>
+<body>
+<form  name = f>
+<table class="container">
+<tr>
+<td>
+Enter any String :
+</td>
+<td>
+<input type="text" name  =n1>
+</td>
+</tr>
+<tr>
+<td>
+Reverse String is:
+</td>
+<td>
+<input type="text" name = n2>
+</td>
+</tr>
+<tr>
+
+</tr>
+<tr>
+
+</tr>
+<tr>
+
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td>
+<input class="btn" type ="submit" value ="Reverse" onclick =reverse()>
+</td>
+<td>
+    <input class="btn-clear" type="reset" value="Clear">
+</td>
+</tr>
+
+
+
+</body>
+</html>
+
+
